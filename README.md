@@ -37,7 +37,7 @@ Basic usage
 #### Share to Instagram with code:
 ```objective-c
             if ([TBSocial isInstagramInstalled]) {
-                // heignt 612px & width 612px
+                // height 612px & width 612px
                 if ([TBSocial isInstagramImageCorrectSize:shareImage]) {
                     [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
                 }
