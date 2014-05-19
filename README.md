@@ -37,10 +37,15 @@ Basic usage
 #### Share to Instagram with code:
 ```objective-c
             if ([TBSocial isInstagramInstalled]) {
-                if ([TBSocial isInstagramImageCorrectSize:shopImage]) {
-                    [TBSocial shareInstagramImageWithCaption:text andImage:shopImage inView:self.view];
+                // heignt 612px & width 612px
+                if ([TBSocial isInstagramImageCorrectSize:shareImage]) {
+                    [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
                 }
             }
 ```
 
-
+#### Share to LINE with code:
+```objective-c
+            [TBSocial shareLineText:shareText]
+            [TBSocial shareLineImage:shareImage];
+```
