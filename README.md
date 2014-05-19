@@ -39,7 +39,7 @@ Basic usage
 if ([TBSocial isInstagramInstalled]) {
   // height 612px & width 612px
   if ([TBSocial isInstagramImageCorrectSize:shareImage]) {
-  [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
+     [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
   } else {
     NSLog(@"Image size is incorrect!");
   }
