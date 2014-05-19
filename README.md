@@ -14,7 +14,7 @@ THUNDERBIRD Social Sharing for iOS 7
 * ARC only; iOS 7.0+
 * **Social.framework**
 
-#### Get it as: 1) source files
+#### Get it as source files
 
 1. Download the TBSocial repository as a [zip file](https://github.com/Thunderbird7/TBSocial.git) or clone it
 2. Copy the TBSocial sub-folder into your Xcode project
