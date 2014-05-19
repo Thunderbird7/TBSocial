@@ -1,7 +1,7 @@
 TBSocial
 ========
 
-THUNDERBIRD Social Sharing for iOS 7
+Simple Social Sharing for iOS 7
 
 ## Features
 - Share content to Facebook (Native)
@@ -36,16 +36,20 @@ Basic usage
 
 #### Share to Instagram with code:
 ```objective-c
-            if ([TBSocial isInstagramInstalled]) {
-                // height 612px & width 612px
-                if ([TBSocial isInstagramImageCorrectSize:shareImage]) {
-                    [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
-                }
-            }
+if ([TBSocial isInstagramInstalled]) {
+  // height 612px & width 612px
+  if ([TBSocial isInstagramImageCorrectSize:shareImage]) {
+  [TBSocial shareInstagramImageWithCaption:shareCaption andImage:shareImage inView:self.view];
+  } else {
+    NSLog(@"Image size is incorrect!");
+  }
+}
 ```
 
 #### Share to LINE with code:
 ```objective-c
-            [TBSocial shareLineText:shareText]
-            [TBSocial shareLineImage:shareImage];
+// Share Text Only
+[TBSocial shareLineText:shareText]
+// Share Image Only
+[TBSocial shareLineImage:shareImage];
 ```
